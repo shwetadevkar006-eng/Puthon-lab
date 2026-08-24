@@ -1,0 +1,11 @@
+name = input("Enter employee name: ")
+role = input("Enter employee role: ")
+salary = float(input("Enter monthly salary: "))
+
+print("\n" + "=" * 35)
+print("       EMPLOYEE PROFILE")
+print("=" * 35)
+print(f"Name   : {name}")
+print(f"Role   : {role}")
+print(f"Salary : ₹{salary:,.2f} / month")
+print("=" * 35)
