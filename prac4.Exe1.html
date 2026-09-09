@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Programs</title>
+</head>
+<body>
+    <h1>JavaScript Examples</h1>
+    <script>
+        let name = "John";
+        let age = 20;
+
+        document.write("<h2>1. Variables</h2>");
+        document.write("Name: " + name + "<br>");
+        document.write("Age: " + age + "<br><br>");
+
+        let a = 10;
+        let b = 5;
+
+        document.write("<h2>2. Arithmetic Operators</h2>");
+        document.write("Addition: " + (a + b) + "<br>");
+        document.write("Subtraction: " + (a - b) + "<br>");
+        document.write("Multiplication: " + (a * b) + "<br>");
+        document.write("Division: " + (a / b) + "<br>");
+        document.write("Remainder: " + (a % b) + "<br><br>");
+
+        let marks = 60;
+        document.write("<h2>3. Conditional Statement</h2>");
+        if (marks >= 40) {
+            document.write("Result: Pass<br><br>");
+        } else {
+            document.write("Result: Fail<br><br>");
+        }
+        document.write("<h2>4. Loop</h2>");
+        for (let i = 1; i <= 5; i++) {
+            document.write(i + "<br>");
+        }
+        document.write("<br>");
+        function add(x, y) {
+            return x + y;
+        }
+        let result = add(10, 20);
+        document.write("<h2>5. JavaScript Function</h2>");
+        document.write("Sum: " + result);
+    </script>
+</body>
+</html>

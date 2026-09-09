@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Operations</title>
+</head>
+<body>
+    <h1 id="heading">Old Heading</h1>
+    <p id="paragraph">Old Paragraph</p>
+    <p id="text">Old Text</p>
+    <img id="myImage"
+         src="https://via.placeholder.com/200"
+         width="200">
+    <br><br>
+
+    <a id="link" href="https://www.google.com">
+        Old Link
+    </a>
+    <br><br>
+  
+    <button onclick="changePage()">Change Content</button>
+    <script>
+        function changePage() {
+            document.getElementById("heading").innerHTML =
+                "Welcome to My Webpage";
+
+            document.getElementById("paragraph").innerText =
+                "This paragraph has been changed using innerText.";
+
+            document.getElementById("text").textContent =
+                "This text is displayed using textContent.";
+
+            document.getElementById("text").style.color = "blue";
+            document.getElementById("text").style.fontSize = "25px";
+
+            document.getElementById("myImage").src =
+                "https://via.placeholder.com/200/00ff00";
+
+            document.getElementById("link").href =
+                "https://www.wikipedia.org";
+
+            document.getElementById("link").innerText =
+                "Visit Wikipedia";
+        }
+    </script>
+</body>
+</html>

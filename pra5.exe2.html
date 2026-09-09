@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript DOM Example</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial;
+            background-color: rgb(228, 173, 230);
+        }
+        .newClass {
+            color: rgb(229, 255, 0);
+            font-size: 35px;
+            font-family: italic;
+        }
+        img {
+            width: 200px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: green;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">My Heading</h1>
+    <p id="paragraph">This is my paragraph.</p>
+    <img id="image" src="https://via.placeholder.com/200">
+    <br><br>
+    <a id="link" href="https://www.google.com">
+        Visit Google
+    </a>
+    <br><br>
+
+    <button onclick="changeContent()">Click Me</button>
+    <script>
+        function changeContent() {
+          
+            document.getElementById("heading").innerHTML =
+                "Heading Changed!";
+
+            document.getElementById("paragraph").innerHTML =
+                "The paragraph has been changed using JavaScript.";
+
+            document.getElementById("image").src =
+                "https://via.placeholder.com/200/ff0000";
+
+            document.getElementById("link").href =
+                "https://www.wikipedia.org";
+
+            document.getElementById("link").innerHTML =
+                "Visit Wikipedia";
+
+            document.body.style.backgroundColor = "lightgreen";
+
+            document.getElementById("paragraph").style.fontSize =
+                "25px";
+
+            document.getElementById("heading").className =
+                "newClass";
+        }
+    </script>
+</body>
+</html>

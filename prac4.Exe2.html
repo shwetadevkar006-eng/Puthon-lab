@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <script>
+        function validateForm() {
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+
+            if (name == "") {
+                alert("Please enter your name");
+                return false;
+            }
+            if (email == "") {
+                alert("Please enter your email");
+                return false;
+            }
+
+            if (!email.includes("@")) {
+                alert("Please enter a valid email");
+                return false;
+            }
+            alert("Registration Successful!");
+            return true;
+        }
+        function clickButton() {
+            alert("Submit button clicked!");
+        }
+        function mouseOver() {
+            alert("Mouse is over the heading!");
+        }
+    </script>
+</head>
+<body>
+    <h1 onmouseover="mouseOver()">Registration Form</h1>
+    <form onsubmit="return validateForm()">
+        <label>Name:</label>
+        <input type="text" id="name">
+        <br><br>
+        <label>Email:</label>
+        <input type="text" id="email">
+        <br><br>
+        <button type="submit" onclick="clickButton()">
+            Submit
+        </button>
+    </form>
+</body>
+</html>
